@@ -84,7 +84,7 @@ function Field({ label, name, type="text", value, onChange, options, hint, span 
   return (
     <div style={{ gridColumn: span ? `span ${span}` : undefined, display:"flex", flexDirection:"column", gap:5 }}>
       <label style={{ fontSize:10, color:B.slate, letterSpacing:"0.14em", fontFamily:"'Jost',sans-serif", textTransform:"uppercase", fontWeight:500 }}>
-        {label}{hint && <span style={{color:B.navyLight,marginLeft:6,color:"#5A7A9A"}}>{hint}</span>}
+        {label}{hint && <span style={{color:"#5A7A9A",marginLeft:6}}>{hint}</span>}
       </label>
       {options
         ? <select name={name} value={value} onChange={onChange} style={base}>
